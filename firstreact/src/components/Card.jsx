@@ -16,7 +16,7 @@ const Card = () => {
         username:"sobhan joodi",
         despreaction : "Published on September 17, 2019 "
     }
-
+// https://cdn.dribbble.com/users/757683/screenshots/5369103/attachments/1164054/search_influencers.jpg
 ]
   return (
 <div className="cards">
@@ -29,9 +29,9 @@ const Card = () => {
         />
       </div>
       <div className="cont ">
-        <h1>Amazon Basic</h1>
+        <h1>{Element.username}</h1>
         <p>
-          Lorem quisquam perferendis veniam nulla excepturi ipsum mollitia erro
+         {Element.despreaction}
         </p>
       </div>
       <button   className="cta"><span class="hover-underline-animation"> Known MORE </span>

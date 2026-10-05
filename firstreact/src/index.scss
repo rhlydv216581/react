@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0%;
     padding: 0%;
@@ -8,12 +7,16 @@
 html,body{
     height: 100%;
     width: 100%;
+     &::-webkit-scrollbar{
+        display: none;
+    }
 }
 #root {
+   
   height: 100%;
   width: 100%;
   background: #E3F2FD;
-
+padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;

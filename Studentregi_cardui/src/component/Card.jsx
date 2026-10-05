@@ -1,6 +1,10 @@
 import React from 'react'
 import "./Card.css"
 export const Card = (propes) => {
+  function deletedhandling(index) {
+     console.log(index);
+      
+  }
   return (
     <div className="cards-container">
   {propes.data.map((user, index) => (
@@ -18,6 +22,7 @@ export const Card = (propes) => {
       <p>
         <strong>Password:</strong> {user.password}
       </p>
+      <button onClick={deletedhandling}  >deleted</button>
     </div>
   ))}
 </div>

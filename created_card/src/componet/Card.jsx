@@ -3,8 +3,10 @@ import React from 'react'
 import "./Card.scss";
 const Card = (propes) => {
   return (
+
     
         <div className="cards">
+            const [first, setfirst] = useState(second)
             <div className="imgs">
                  <img src={propes.data.images[0]} alt="" />
             <img src={propes.data.images[1]} alt="" />

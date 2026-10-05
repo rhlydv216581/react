@@ -1,0 +1,121 @@
+dekh react -- mai aisa hota hai app sa data bhejata hai ok necha  child ko 
+like app.js sa data bejaga aur child.jsx mai propes sa recive kar lega for 
+
+Child khud directly Parent ko data nahi bhejta.
+Parent ek function Child ko props mein deta hai, aur Child us function ko call karke data Parent tak pahucha deta hai.
+
+
+
+
+
+
+example ---
+----------------------------------------
+import Child from "./Child";
+
+function App() {
+  const name = "Rahul";
+
+  return (
+    <div>
+      <h1>App Component</h1>
+
+      <Child userName={name} />
+    </div>
+  );
+}
+export default App;
+// child ka import karhu kyu ki  vo dekh home mai aur 
+aur muja data bhejana hai tho muja ussa child ko render he karna padega ok  issa leya  im
+import Child from "./Child"; use kar rahu ok 
+muja vo data bheja hai tho <child  username = {name}>   usename propes ka naam hai aur name  data hai jho rahul bheja rahai
+---------------------------------
+Child.jsx
+function Child(props) {
+  return (
+    <div>
+      <h1>Child Component</h1>
+
+      <p>{props.userName}</p>
+    </div>
+  );
+}
+
+export default Child;
+
+-------------------------------------------------
+abhi tak tuja ye pata chala gayahai ki tu kissi ko data kais beja ga 
+ab apna  child sa app mai data bhejaga ok tho 
+ thp apna ka main goal hai 
+ 🎯 Goal
+Form ka data (Child)
+  ↓
+data
+  ↓
+App (parent mai bhena hai ok )
+ \
+ card.jsx (child )
+-------------------------------------------------
+ye horahai ki form ka data app mai jharahai fir app sa data sa card bannaaya ga ok
+-------------------------------------------------
+Humein Form se data App mein bhejna hai.
+
+Step 1 — Parent mein state banao
+
+Sabse pehle App.jsx mein socho:
+
+Data App mein store karna hai, to state kahan banegi?
+
+App ke andar useState se ek state banao jo initially empty ho.
+
+Hint:
+
+const [____, set____] = useState(____)
+Tumhara task
+
+App.jsx mein sirf itna likho:
+
+import { useState } from "react"
+
+function App() {
+
+  // yahan state banao
+
+  return (
+    <>
+    </>
+  )
+}
+
+export default App
+---------------------------------
+abhi apna app.jsx mai state use kar rahai kyu ki data store app mai kar rahai haina
+Step 2
+
+App mein ek function banao jo Form se data receive karega.
+kyu issa leya  ki form sa data submited ho tho vo recive ho 
+kyu kiflow tho parent sa child jatahai ye aisa likha 
+import { useState } from "react"
+import Form from "./Component/Form"
+
+function App() {
+
+  const [data, setData] = useState([])
+
+  // Ye function Form se data receive karega
+  function receiveData(value) {
+    console.log(value)
+  }
+
+  return (
+    <>
+      <Form />
+    </>
+  )
+}
+
+export default App
+ abhi tak tunn aapp mai form function banna leya hai ok ab tu ye form function ko bhejaga form.jsx 
+<Form propes={receiveData} />
+
+

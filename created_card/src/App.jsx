@@ -156,8 +156,7 @@ const App = () => {
 ];
   return (
     data.map((elemt)=>
-      <Card  data={elemt
-      }  />   
+      <Card  data={elemt }  />   
     )
   
   )

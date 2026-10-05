@@ -1,0 +1,9 @@
+Tier 1 must: var-let-const, scope, hoisting, TDZ, data types, null vs undefined, == vs ===,
+type coercion, function declaration vs expression, arrow function, this, callback, higher-order functions, closures, promises, async-await, event loop, map/filter/forEach, find, reduce. Tier
+Tier 2 common: rest vs spread, destructuring, slice vs splice, objects, keys values entries, DOM, bubbling vs capturing, fetch, try-catch, callback hell
+Tier 3 kabhi-kabhi: IIFE, optional chaining, nullish coalescing, set/map, prototype. Coding questions almost har junior interview mein: reverse string, palindrome, remove duplicates, simple array tasks, small React component.
+
+react 
+Tier1 mein: JSX, Components, Props, State, useState, useEffect, Props vs State, Conditional Rendering, Lists & Keys, Event Handling, Forms, Controlled vs Uncontrolled, API Calls with fetch and useEffect, basic re-rendering concept.
+Tier 2 common mein aata hai: Lifting State Up, useContext, UseRef, useMemo aur useCallback ka basic use, Custom Hooks, Context API, Virtual DOM basics, Reconciliation, state updates async kyun hote hain, cleanup in useEffect.
+Tier 3 kabhi-kabhi puccchte hain: React Router, Lazy Loading, Code Splitting, Error Boundaries, HOCs, Render Props, Portals, useReducer, Performance tweaks. Coding tasks usually Todo App, Counter App, Search Filter, fetching data and displaying it, simple form validation. Agar sirf top cheezein padhne ka time ho, to focus on JSX, Components, Props, State, useState, useEffect, Controlled Components, API fetching, basic useMemo and useCallback. Ye cover ho gaya to junior React interviews ke liye kaafi prepared rahoge. Uske baad coding practice plus do teen mock interviews agla natural step hai.

@@ -6,7 +6,7 @@ const App = () => {
   const [data, setdata] = useState([])
   function recivedata(value) {
    setdata(
-     [...data,
+     [...data,   // spread operator use hota hai ki purana daa bachana hai aur add karna naya data tab spread operator use hoga ok  issa leya form mai ye use kar rahaia 
      value]
    )
     console.log(value);

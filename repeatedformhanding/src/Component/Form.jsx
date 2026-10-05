@@ -14,6 +14,7 @@ const Form = ({ propes }) => {
       {
     ...formdata,
     [e.target.name] : e.target.value ,
+    // 
   }
 
  )
